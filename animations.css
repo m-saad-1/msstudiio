@@ -1,0 +1,36 @@
+/* Typing animation styles */
+.typing-text {
+  position: relative;
+  color: #fff; /* Or your highlight color */
+}
+
+.typing-text::after {
+  content: "|";
+  position: relative; /* Changed from absolute */
+  left: 2px; /* Fine-tune this value */
+  color: 31e293b;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+ @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  

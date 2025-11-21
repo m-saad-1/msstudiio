@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end Portfolio</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+ <header>
+  <div class="logo">
+  <a href="index.html#hero">MsStudio</a>
+</div>
+  <nav>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="menu-order-btn"><a href="index.html#contact" class="btn">Hire Me</a></li>
+    </ul>
+    <a href="index.html#contact" class="desktop-order-btn btn">Hire Me</a>
+  </nav>
+</header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <div class="portfolio-header">
+      <h1>Front-end Portfolio</h1>
+      <p>Showcasing my finest front-end projects, featuring responsive layouts, dynamic UI, and interactive designs.</p>
+    </div>
+    
+    <div class="pinterest-grid">
+      <!-- Column 1 -->
+      <div class="grid-column">
+        <div class="portfolio-item">
+          <img src="images/front-end/quiz-app-thumb.webp" alt="Interactive Quizz App">
+          <div class="item-overlay">
+            <h3>Interactive Quizz App</h3>
+            <p>internal training platform</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/web whiz.webp" alt="My Portfolio web">
+          <div class="item-overlay">
+            <h3>My Portfolio web</h3>
+            <p>My Portfolio web</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/think.webp" alt="It website">
+          <div class="item-overlay">
+            <h3>It website</h3>
+            <p>Managed and reliable support</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/skelpo.webp" alt="Software Development">
+          <div class="item-overlay">
+            <h3>Software Development</h3>
+            <p>Building innovative solutions</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/book.webp" alt="Author Publishing">
+          <div class="item-overlay">
+            <h3>Author Publishing</h3>
+            <p>Publish your book</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 2 -->
+      <div class="grid-column">
+        <div class="portfolio-item tall">
+          <img src="images/front-end/interactive-thumb.webp" alt="Interactive landing page">
+          <div class="item-overlay">
+            <h3>Interactive landing page</h3>
+            <p>Transform your digital presence</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/front-end/boosteraffix-thumb.webp" alt="Performance Marketing Platform">
+          <div class="item-overlay">
+            <h3>Performance Marketing Platform</h3>
+            <p>Premium advertising solutions.</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/augility.webp" alt="Business Automation">
+          <div class="item-overlay">
+            <h3>Business Automation</h3>
+            <p>Streamline workflows</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/agence.webp" alt="Digital Agency">
+          <div class="item-overlay">
+            <h3>Digital Agency</h3>
+            <p> Meets Scalable Results</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/academy.webp" alt="2000 Academy">
+          <div class="item-overlay">
+            <h3>2000 Academy</h3>
+            <p>Virtual Assistants</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 3 -->
+      <div class="grid-column">
+        <div class="portfolio-item">
+          <img src="images/front-end/portfolio-thumb.webp" alt="Responsive Portfolio Website">
+          <div class="item-overlay">
+            <h3>Responsive Portfolio Website</h3>
+            <p>Forge your firepower</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/front-end/sales-thumb.webp" alt="Sales Machine">
+          <div class="item-overlay">
+            <h3>Sales Machine</h3>
+            <p>Sales Funnel Builder Website</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/zercurity.webp" alt="Cybersecurity Monitoring">
+          <div class="item-overlay">
+            <h3>Cybersecurity Monitoring</h3>
+            <p>Real-time protection</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/my portfolio web.webp" alt="Portfolio Website">
+          <div class="item-overlay">
+            <h3>Portfolio Website</h3>
+            <p>For myself</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/card1 error .webp" alt="Coffee Shop">
+          <div class="item-overlay">
+            <h3>Coffee Shop</h3>
+            <p>Cafe & Roastery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery Modal -->
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <div class="modal-grid single-column">
+        <!-- Project images will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo Section -->
+      <div class="footer-col footer-logo">
+        <div class="logo">
+  <a href="index.html#hero">MsStudio</a>
+</div>
+        <p class="footer-description">
+          Transforming ideas into reality with creativity and precision. We specialize in Graphics Design, Figma Design, and Web Development.
+        </p>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-col footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#order">Order Now</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-col footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> msaad23305@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 MyStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Project data for web design portfolio
+      const projects = {
+            'Interactive Quizz App': {
+    images: ['images/front-end/quiz-app.webp'],
+    description: `
+      <p>A dynamic, interactive quiz application built with React featuring:</p>
+      <ul class="features-list">
+        <li><span>🎯 Quiz Functionality:</span> Multiple-choice questions with randomized order, real-time scoring, and progress tracking</li>
+        <li><span>⏱️ Timer Options:</span> Configurable time limits per question</li>
+        <li><span>🌓 Dark/Light Mode:</span> Smooth theme switching with persistent user preferences</li>
+        <li><span>📱 Responsive Design:</span> Works flawlessly on all devices</li>
+        <li><span>✨ Modern UI:</span> Clean animations and transitions for an engaging experience</li>
+      </ul>
+      <p class="closing-note">Perfect for testing knowledge with a polished, user-friendly interface! 🚀</p>
+    `,
+    links: {
+      demo: "https://quiz-app-demo.com",
+      github: "https://github.com/yourusername/quiz-app"
+    }
+  },
+        'My Portfolio web': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "https://landing-page-demo.com",
+      github: "https://github.com/yourusername/interactive-landing"
+    }
+  },
+        'Interactive landing page': {
+    images: ['images/front-end/interactive.webp'],
+    description: `
+      <p>A sleek, high-performance landing page built with HTML, CSS, and JavaScript, designed to captivate users and drive engagement.</p>
+      <ul class="features-list">
+        <li><span>✨ Hero Section:</span> Eye-catching animated headline, particle background effect, and smooth scroll-down interaction</li>
+        <li><span>✅ Dynamic About Section:</span> Animated counters, responsive layout, and engaging feature highlights</li>
+        <li><span>🎯 Interactive Features:</span> Tabs, sliders, hover effects, and scroll-triggered animations</li>
+        <li><span>📱 Fully Responsive:</span> Optimized for all devices (mobile, tablet, desktop)</li>
+        <li><span>💎 Modern UI/UX:</span> Clean design, smooth transitions, and micro-interactions</li>
+        <li><span>⚡ Performance Optimized:</span> Fast loading, minimal dependencies, and efficient animations</li>
+      </ul>
+      <p class="closing-note">Perfect for showcasing products, services, or portfolios with a polished, engaging experience! 🚀</p>
+    `,
+     links: {
+      demo: "https://landing-page-demo.com",
+      github: "https://github.com/yourusername/interactive-landing"
+    }
+  },
+        'Performance Marketing Platform': {
+    images: ['images/front-end/boosteraffix.webp'],
+    description: `
+      <p>A high-conversion performance marketing platform built with HTML, CSS, and JavaScript, designed to attract premium publishers and advertisers.</p>
+      <ul class="features-list">
+        <li><span>✨ Dual-Audience Hero:</span> Animated traffic visualization with floating elements and gradient overlays that emphasize growth</li>
+        <li><span>✅ Publisher Network Showcase:</span> Real media brand logos with interactive hover states and credibility-building stats</li>
+        <li><span>🎯 Conversion-Focused CTAs:</span> Strategic publisher/advertiser signup sections with benefit-driven copy</li>
+        <li><span>📱 Performance-Optimized:</span> Fully responsive layouts with intelligent mobile adaptation and fast loading</li>
+        <li><span>💎 Data Visualization:</span> Animated ROI metrics, testimonial cards, and dashboard-style tech displays</li>
+        <li><span>⚡ Marketing-Focused UI:</span> Clean conversion paths, micro-interactions, and scroll-triggered social proof elements</li>
+      </ul>
+      <p class="closing-note">Ideal for performance marketing networks seeking to onboard premium partners with a polished, results-driven experience! 🚀</p>
+    `,
+    links: {
+      demo: "https://boosteraffix-demo.com",
+      github: "https://github.com/yourusername/performance-marketing-platform"
+    }
+  },
+        'Responsive Portfolio Website': {
+          images: ['images/front-end/portfolio.webp'],
+          description: `
+            <p>A modern, responsive portfolio website designed to showcase your work and skills effectively.</p>
+            <ul class="features-list">
+              <li><span>🌐 Responsive Design:</span> Adapts seamlessly to all screen sizes</li>
+              <li><span>🎨 Customizable Layout:</span> Flexible sections for projects, skills, and contact information</li>
+              <li><span>📸 Image Gallery:</span> Showcase your work with a beautiful image grid</li>
+              <li><span>📞 Contact Form:</span> Easy way for potential clients to reach you</li>
+              <li><span>🚀 Fast Loading:</span> Optimized for performance and user experience</li>
+            </ul>
+            <p class="closing-note">Ideal for freelancers, designers, and developers looking to make a strong online impression! 🚀</p>
+          `,
+          links: {
+      demo: "https://landing-page-demo.com",
+      github: "https://github.com/yourusername/interactive-landing"
+    }
+  },
+
+  'Sales Machine': {
+    "images": ["images/front-end/sales.webp"],
+    "description": `
+      <p>A high-converting sales funnel builder with light green theme featuring:</p>
+      <ul class="features-list">
+        <li><span>🛠️ Drag & Drop Editor:</span> Intuitive visual builder for creating funnels without coding</li>
+        <li><span>📊 Smart Analytics:</span> Real-time conversion tracking and performance insights</li>
+        <li><span>🎨 Light Green Theme:</span> Fresh #a8e6cf color scheme with professional dark accents</li>
+        <li><span>📱 Fully Responsive:</span> Perfectly adapted for mobile, tablet and desktop</li>
+        <li><span>💌 Email Automation:</span> Built-in sequences and triggers for lead nurturing</li>
+        <li><span>🔄 100+ Integrations:</span> Connect with payment processors, CRMs and marketing tools</li>
+        <li><span>⚡ Performance Optimized:</span> Fast loading with smooth animations</li>
+        <li><span>🎯 A/B Testing:</span> Compare funnel versions to maximize conversions</li>
+      </ul>
+      <p class="closing-note">Perfect for marketers, coaches and entrepreneurs to build automated sales machines! 🚀</p>
+    `,
+    "links": {
+      "demo": "https://funnelflow-demo.com",
+      "github": "https://github.com/yourusername/funnelflow"
+    }
+},
+        'It website': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Business Automation': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+   links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Cybersecurity Monitoring': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+   links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Software Development': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Author Publishing': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+   links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Digital Agency':{
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+   links: {
+      demo: "",
+      github: ""
+    }
+  },
+        '2000 Academy': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Portfolio Website error)':{
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+        'Coffee Shop (error)': {
+    images: ['images/front-end/not-available.webp'],
+    description: `
+    <ul class="features-list"> 
+    <li><span>Website not HOSTED yet, and not uploaded to GIT HUB</span></li>
+    </ul>`,
+    links: {
+      demo: "",
+      github: ""
+    }
+  },
+      };
+    
+      // Get DOM elements
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      const projectModal = document.getElementById('project-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalGrid = document.querySelector('.modal-grid');
+      const closeModal = document.querySelector('.close-modal');
+    
+      // Function to show modal
+      function showModal() {
+        projectModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        // Trigger reflow to enable CSS transition
+        void projectModal.offsetWidth;
+        projectModal.classList.add('modal-open');
+      }
+    
+      // Function to hide modal
+      function hideModal() {
+        projectModal.classList.remove('modal-open');
+        setTimeout(() => {
+          projectModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }, 300); // Match this with CSS transition duration
+      }
+    
+      
+function openProjectModal(title) {
+  modalTitle.textContent = title;
+  modalGrid.innerHTML = '';
+  
+  const descriptionContainer = document.createElement('div');
+  descriptionContainer.className = 'modal-description-container';
+  
+  if (projects[title]) {
+    // Add description heading
+    const descriptionHeading = document.createElement('h3');
+    descriptionHeading.className = 'modal-description-heading';
+    descriptionHeading.textContent = 'Project Details';
+    descriptionContainer.appendChild(descriptionHeading);
+    
+    // Add description content
+    const description = document.createElement('div');
+    description.className = 'modal-description';
+    description.innerHTML = projects[title].description || 'No description available';
+    descriptionContainer.appendChild(description);
+    
+    // Add links if they exist
+    if (projects[title].links) {
+      const linksContainer = document.createElement('div');
+      linksContainer.className = 'project-links';
+      
+      if (projects[title].links.demo) {
+        const demoLink = document.createElement('a');
+        demoLink.href = projects[title].links.demo;
+        demoLink.className = 'project-link demo-btn';
+        demoLink.target = '_blank';
+        demoLink.innerHTML = '<i class="fas fa-external-link-alt"></i> Live Demo';
+        linksContainer.appendChild(demoLink);
+      }
+      
+      if (projects[title].links.github) {
+        const githubLink = document.createElement('a');
+        githubLink.href = projects[title].links.github;
+        githubLink.className = 'project-link github-btn';
+        githubLink.target = '_blank';
+        githubLink.innerHTML = '<i class="fab fa-github"></i> View Code';
+        linksContainer.appendChild(githubLink);
+      }
+      
+      descriptionContainer.appendChild(linksContainer);
+    }
+    
+    // Add images
+    projects[title].images.forEach(imgSrc => {
+      const imgContainer = document.createElement('div');
+      imgContainer.className = 'modal-image-container';
+      
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = title;
+      img.onerror = function() {
+        imgContainer.innerHTML = `<p class="image-error">Image not found: ${imgSrc}</p>`;
+        console.error('Image failed to load:', imgSrc);
+      };
+      
+      imgContainer.appendChild(img);
+      modalGrid.appendChild(imgContainer);
+    });
+    
+  } else {
+    descriptionContainer.innerHTML = `
+      <h3 class="modal-description-heading">Project Details</h3>
+      <p class="modal-description">Project information not available.</p>
+    `;
+    modalGrid.innerHTML = '<p class="image-error">No images available for this project.</p>';
+  }
+  
+  // Insert description before images
+  modalGrid.insertBefore(descriptionContainer, modalGrid.firstChild);
+  
+  showModal();
+}
+    
+      // Add click events to portfolio items
+      portfolioItems.forEach(item => {
+        item.addEventListener('click', function() {
+          const overlay = this.querySelector('.item-overlay');
+          const title = overlay ? overlay.querySelector('h3').textContent : 'Project';
+          openProjectModal(title);
+        });
+      });
+    
+      // Close modal when clicking X button
+      closeModal.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideModal();
+      });
+    
+      // Close modal when clicking outside content
+      projectModal.addEventListener('click', function(e) {
+        if (e.target === projectModal) {
+          hideModal();
+        }
+      });
+    
+      // Close modal with ESC key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && projectModal.style.display === 'block') {
+          hideModal();
+        }
+      });
+    
+      // Hamburger menu functionality for mobile
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('nav ul');
+    
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          this.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('nav') && !e.target.classList.contains('hamburger')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

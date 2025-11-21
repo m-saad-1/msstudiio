@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Stack Portfolio</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+ <header>
+  <div class="logo">
+  <a href="index.html#hero">MsStudio</a>
+</div>
+  <nav>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="menu-order-btn"><a href="index.html#contact" class="btn">Hire Me</a></li>
+    </ul>
+    <a href="index.html#contact" class="desktop-order-btn btn">Hire Me</a>
+  </nav>
+</header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <div class="portfolio-header">
+      <h1>Full-Stack Portfolio</h1>
+      <p>Showcasing my top full stack projects, combining robust back-end logic with seamless front-end interfaces.</p>
+    </div>
+    
+    <div class="pinterest-grid">
+      <!-- Column 1 -->
+      <div class="grid-column">
+        <div class="portfolio-item">
+          <img src="images/full-stack/fashion-thumb.webp" alt="Men Fashion Hub">
+          <div class="item-overlay">
+            <h3>Men Fashion Hub</h3>
+            <p>Men’s Fashion E-Commerce Store</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/web whiz.webp" alt="My Portfolio web">
+          <div class="item-overlay">
+            <h3>My Portfolio web</h3>
+            <p>My Portfolio web</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/think.webp" alt="It website">
+          <div class="item-overlay">
+            <h3>It website</h3>
+            <p>Managed and reliable support</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/skelpo.webp" alt="Software Development">
+          <div class="item-overlay">
+            <h3>Software Development</h3>
+            <p>Building innovative solutions</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/book.webp" alt="Author Publishing">
+          <div class="item-overlay">
+            <h3>Author Publishing</h3>
+            <p>Publish your book</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 2 -->
+      <div class="grid-column">
+        <div class="portfolio-item tall">
+          <img src="images/full-stack/grid-thumb.webp" alt="Pinterest-inspired Grid">
+          <div class="item-overlay">
+            <h3>Pinterest-inspired Grid</h3>
+            <p>Pinterest-inspired visual content platform</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/front-end/boosteraffix-thumb.webp" alt="Performance Marketing Platform">
+          <div class="item-overlay">
+            <h3>Performance Marketing Platform</h3>
+            <p>Premium advertising solutions.</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/augility.webp" alt="Business Automation">
+          <div class="item-overlay">
+            <h3>Business Automation</h3>
+            <p>Streamline workflows</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/agence.webp" alt="Digital Agency">
+          <div class="item-overlay">
+            <h3>Digital Agency</h3>
+            <p> Meets Scalable Results</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/academy.webp" alt="2000 Academy">
+          <div class="item-overlay">
+            <h3>2000 Academy</h3>
+            <p>Virtual Assistants</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 3 -->
+      <div class="grid-column">
+        <div class="portfolio-item">
+          <img src="images/front-end/portfolio-thumb.webp" alt="Responsive Portfolio Website">
+          <div class="item-overlay">
+            <h3>Responsive Portfolio Website</h3>
+            <p>Forge your firepower</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/logoipsum.webp" alt="Sales Machine">
+          <div class="item-overlay">
+            <h3>Sales Machine</h3>
+            <p>Stunning Sales Funnnel</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/zercurity.webp" alt="Cybersecurity Monitoring">
+          <div class="item-overlay">
+            <h3>Cybersecurity Monitoring</h3>
+            <p>Real-time protection</p>
+          </div>
+        </div>
+        <div class="portfolio-item tall">
+          <img src="images/my portfolio web.webp" alt="Portfolio Website">
+          <div class="item-overlay">
+            <h3>Portfolio Website</h3>
+            <p>For myself</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/card1 error .webp" alt="Coffee Shop">
+          <div class="item-overlay">
+            <h3>Coffee Shop</h3>
+            <p>Cafe & Roastery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery Modal -->
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <div class="modal-grid single-column">
+        <!-- Project images will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo Section -->
+      <div class="footer-col footer-logo">
+        <div class="logo">
+  <a href="index.html#hero">MsStudio</a>
+</div>
+        <p class="footer-description">
+          Transforming ideas into reality with creativity and precision. We specialize in Graphics Design, Figma Design, and Web Development.
+        </p>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-col footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#order">Order Now</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-col footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> msaad23305@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 MyStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Project data for web design portfolio
+      const projects = {
+            'Men Fashion Hub': {
+    images: ['images/full-stack/fashion1.webp', 
+                'images/full-stack/fashion2.webp', 
+                'images/full-stack/fashion3.webp', 
+                'images/full-stack/fashion4.webp', 
+                'images/full-stack/fashion5.webp'
+    ],
+  description: `
+    <p>A sleek, high-performance Men’s Fashion E-Commerce Store built with modern web technologies, designed to deliver a premium shopping experience.</p>
+    <ul class="features-list">
+      <li><span>👕 Product Showcase:</span> Beautifully organized product listings with filters, categories, and real-time search</li>
+      <li><span>🛍️ Interactive Shopping:</span> Seamless add-to-cart, wishlist, and checkout flow with live order updates</li>
+      <li><span>🔐 Secure Authentication:</span> User registration, login, and profile management with password protection</li>
+      <li><span>💳 Integrated Payments:</span> Smooth Stripe/PayPal checkout with promo code support</li>
+      <li><span>🌓 Dark/Light Mode:</span> Elegant theme toggle with saved preferences</li>
+      <li><span>📱 Fully Responsive:</span> Optimized layout for mobile, tablet, and desktop</li>
+      <li><span>📦 Admin Dashboard:</span> Manage products, orders, and users with insightful sales reports</li>
+      <li><span>✨ Modern UI:</span> Clean layout with stylish animations, transitions, and intuitive UX</li>
+    </ul>
+    <p class="closing-note">📈 Perfect for launching a polished, feature-rich fashion store with real-time e-commerce capabilities! 🚀</p>
+  `,
+  links: {
+    demo: "https://your-live-demo-link.com",
+    github: "https://github.com/yourusername/men-fashion-ecommerce"
+  }
+},
+
+        'My Portfolio web': ['images/web whiz1.webp'],
+        'Pinterest-inspired Grid': {
+    images: ['images/full-stack/grid1.webp',
+                'images/full-stack/grid2.webp', 
+                'images/full-stack/grid3.webp', 
+                'images/full-stack/grid4.webp'
+    ],
+     description: `
+      <p>A Pinterest-inspired visual content platform built with PHP, MySQL, and modern JavaScript, designed for seamless image sharing and discovery.</p>
+      <ul class="features-list">
+        <li><span>✨ Pinterest-Style Grid:</span> Authentic masonry layout with dynamic column balancing and smooth hover effects</li>
+        <li><span>✅ Full User System:</span> Secure registration/login with password hashing and session management</li>
+        <li><span>🎯 Content Management:</span> Drag-and-drop uploads, automatic thumbnails, and responsive image handling</li>
+        <li><span>📱 Fully Responsive:</span> Perfectly adapted for all devices from mobile to desktop</li>
+        <li><span>💎 Modern UI/UX:</span> Clean card design with animated overlays, lazy loading, and intuitive navigation</li>
+        <li><span>⚡ Performance Optimized:</span> Efficient database queries, minimized assets, and progressive image loading</li>
+        <li><span>🔒 Secure Architecture:</span> Protected file uploads, prepared statements, and input validation</li>
+      </ul>
+      <p class="closing-note">Ideal for building communities around visual content with a beautiful, engaging interface! 🖼️</p>
+    `,
+    links: {
+      demo: "http://yourdomain.com/visual-platform",
+      github: "https://github.com/yourusername/visual-content-platform"
+    }
+  },
+        'Performance Marketing Platform': {
+    images: ['images/front-end/boosteraffix.webp'],
+    description: `
+      <p>A high-conversion performance marketing platform built with HTML, CSS, and JavaScript, designed to attract premium publishers and advertisers.</p>
+      <ul class="features-list">
+        <li><span>✨ Dual-Audience Hero:</span> Animated traffic visualization with floating elements and gradient overlays that emphasize growth</li>
+        <li><span>✅ Publisher Network Showcase:</span> Real media brand logos with interactive hover states and credibility-building stats</li>
+        <li><span>🎯 Conversion-Focused CTAs:</span> Strategic publisher/advertiser signup sections with benefit-driven copy</li>
+        <li><span>📱 Performance-Optimized:</span> Fully responsive layouts with intelligent mobile adaptation and fast loading</li>
+        <li><span>💎 Data Visualization:</span> Animated ROI metrics, testimonial cards, and dashboard-style tech displays</li>
+        <li><span>⚡ Marketing-Focused UI:</span> Clean conversion paths, micro-interactions, and scroll-triggered social proof elements</li>
+      </ul>
+      <p class="closing-note">Ideal for performance marketing networks seeking to onboard premium partners with a polished, results-driven experience! 🚀</p>
+    `,
+    links: {
+      demo: "https://boosteraffix-demo.com",
+      github: "https://github.com/yourusername/performance-marketing-platform"
+    }
+  },
+        'Responsive Portfolio Website': {
+          images: ['images/front-end/portfolio.webp'],
+          description: `
+            <p>A modern, responsive portfolio website designed to showcase your work and skills effectively.</p>
+            <ul class="features-list">
+              <li><span>🌐 Responsive Design:</span> Adapts seamlessly to all screen sizes</li>
+              <li><span>🎨 Customizable Layout:</span> Flexible sections for projects, skills, and contact information</li>
+              <li><span>📸 Image Gallery:</span> Showcase your work with a beautiful image grid</li>
+              <li><span>📞 Contact Form:</span> Easy way for potential clients to reach you</li>
+              <li><span>🚀 Fast Loading:</span> Optimized for performance and user experience</li>
+            </ul>
+            <p class="closing-note">Ideal for freelancers, designers, and developers looking to make a strong online impression! 🚀</p>
+          `,
+          links: {
+      demo: "https://landing-page-demo.com",
+      github: "https://github.com/yourusername/interactive-landing"
+    }
+  },
+        'Sales Machine': ['images/watch1.webp'],
+        'It website': ['images/think1.webp'],
+        'Business Automation': ['images/augility1.webp'],
+        'Cybersecurity Monitoring': ['images/Zercurity 1.webp'],
+        'Software Development': ['images/skelpo1.webp'],
+        'Author Publishing': ['images/book1.webp'],
+        'Digital Agency': ['images/agence1.webp'],
+        '2000 Academy': ['images/academy1.webp'],
+        'Portfolio Website error)': ['images/my portfolio web 1.webp'],
+        'Coffee Shop (error)': ['images/web18-detail1.webp']
+      };
+    
+      // Get DOM elements
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      const projectModal = document.getElementById('project-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalGrid = document.querySelector('.modal-grid');
+      const closeModal = document.querySelector('.close-modal');
+    
+      // Function to show modal
+      function showModal() {
+        projectModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        // Trigger reflow to enable CSS transition
+        void projectModal.offsetWidth;
+        projectModal.classList.add('modal-open');
+      }
+    
+      // Function to hide modal
+      function hideModal() {
+        projectModal.classList.remove('modal-open');
+        setTimeout(() => {
+          projectModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }, 300); // Match this with CSS transition duration
+      }
+    
+      
+function openProjectModal(title) {
+  modalTitle.textContent = title;
+  modalGrid.innerHTML = '';
+  
+  const descriptionContainer = document.createElement('div');
+  descriptionContainer.className = 'modal-description-container';
+  
+  if (projects[title]) {
+    // Add description heading
+    const descriptionHeading = document.createElement('h3');
+    descriptionHeading.className = 'modal-description-heading';
+    descriptionHeading.textContent = 'Project Details';
+    descriptionContainer.appendChild(descriptionHeading);
+    
+    // Add description content
+    const description = document.createElement('div');
+    description.className = 'modal-description';
+    description.innerHTML = projects[title].description || 'No description available';
+    descriptionContainer.appendChild(description);
+    
+    // Add links if they exist
+    if (projects[title].links) {
+      const linksContainer = document.createElement('div');
+      linksContainer.className = 'project-links';
+      
+      if (projects[title].links.demo) {
+        const demoLink = document.createElement('a');
+        demoLink.href = projects[title].links.demo;
+        demoLink.className = 'project-link demo-btn';
+        demoLink.target = '_blank';
+        demoLink.innerHTML = '<i class="fas fa-external-link-alt"></i> Live Demo';
+        linksContainer.appendChild(demoLink);
+      }
+      
+      if (projects[title].links.github) {
+        const githubLink = document.createElement('a');
+        githubLink.href = projects[title].links.github;
+        githubLink.className = 'project-link github-btn';
+        githubLink.target = '_blank';
+        githubLink.innerHTML = '<i class="fab fa-github"></i> View Code';
+        linksContainer.appendChild(githubLink);
+      }
+      
+      descriptionContainer.appendChild(linksContainer);
+    }
+    
+    // Add images
+    projects[title].images.forEach(imgSrc => {
+      const imgContainer = document.createElement('div');
+      imgContainer.className = 'modal-image-container';
+      
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = title;
+      img.onerror = function() {
+        imgContainer.innerHTML = `<p class="image-error">Image not found: ${imgSrc}</p>`;
+        console.error('Image failed to load:', imgSrc);
+      };
+      
+      imgContainer.appendChild(img);
+      modalGrid.appendChild(imgContainer);
+    });
+    
+  } else {
+    descriptionContainer.innerHTML = `
+      <h3 class="modal-description-heading">Project Details</h3>
+      <p class="modal-description">Project information not available.</p>
+    `;
+    modalGrid.innerHTML = '<p class="image-error">No images available for this project.</p>';
+  }
+  
+  // Insert description before images
+  modalGrid.insertBefore(descriptionContainer, modalGrid.firstChild);
+  
+  showModal();
+}
+    
+      // Add click events to portfolio items
+      portfolioItems.forEach(item => {
+        item.addEventListener('click', function() {
+          const overlay = this.querySelector('.item-overlay');
+          const title = overlay ? overlay.querySelector('h3').textContent : 'Project';
+          openProjectModal(title);
+        });
+      });
+    
+      // Close modal when clicking X button
+      closeModal.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideModal();
+      });
+    
+      // Close modal when clicking outside content
+      projectModal.addEventListener('click', function(e) {
+        if (e.target === projectModal) {
+          hideModal();
+        }
+      });
+    
+      // Close modal with ESC key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && projectModal.style.display === 'block') {
+          hideModal();
+        }
+      });
+    
+      // Hamburger menu functionality for mobile
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('nav ul');
+    
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          this.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('nav') && !e.target.classList.contains('hamburger')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

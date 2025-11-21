@@ -1,0 +1,737 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Global Styles */
+body {
+  
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+.logo a {
+  color: inherit;   
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6b6b;
+}
+
+/* Desktop Order Button */
+.desktop-order-btn {
+  margin-left: 30px;
+}
+/* Mobile Order Button */
+.menu-order-btn {
+  display: none;
+}
+
+
+/* Button */
+.btn {
+  padding: 14px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: #d9534f;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+/* Hamburger Menu Styles (Mobile) */
+@media (max-width: 768px) {
+ /* Show the order button only in mobile menu */
+  .menu-order-btn {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .menu-order-btn .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .menu-order-btn .btn:hover {
+    background: #d9534f;
+  }
+
+  /* Desktop Order Button */
+.desktop-order-btn {
+  display: none;
+}
+
+  /* Make sure the mobile menu is properly styled */
+  nav ul {
+        display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transform: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+    nav ul li a {
+    padding: 25px 60px; /* Larger tap targets on mobile */
+    text-align: center;
+  }
+
+  /* Hamburger icon styles */
+  .hamburger {
+    display: block;
+    z-index: 101;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+
+
+  
+ /* Portfolio Section Styles */
+.portfolio-section {
+  padding: 80px 5% 80px;
+  background: #f9f9f9;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-header h1 {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.portfolio-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Pinterest Style Grid */
+.pinterest-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-column {
+  flex: 1;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-item.tall img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .item-overlay {
+  transform: translateY(0);
+}
+
+.item-overlay h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.item-overlay p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Project Modal Styles */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: none;
+}
+
+.project-modal.modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.project-modal.modal-open .modal-content {
+  transform: translateY(0);
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #ff6b6b;
+}
+
+#modal-title {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-description-heading {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-description-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Update the description container to allow HTML */
+.modal-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+.modal-image-container {
+  margin-bottom: 20px;
+}
+
+.image-error {
+  color: #ff6b6b;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.modal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.features-list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.features-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.features-list span {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.closing-note {
+  font-style: italic;
+  margin-top: 15px;
+  color: #555;
+}
+
+
+
+/* Project Links Buttons */
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.project-link i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.demo-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.demo-btn:hover {
+  background-color: #3e8e41;
+}
+
+.github-btn {
+  background-color: #333;
+  color: white;
+}
+
+.github-btn:hover {
+  background-color: #222;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .pinterest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-column {
+    max-width: 100%;
+  }
+  
+  /* Adjust the portfolio items to fill the grid cells */
+  .portfolio-item {
+    height: 100%;
+  }
+  
+  /* Ensure images fill their containers */
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .pinterest-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .portfolio-header h1 {
+    font-size: 32px;
+  }
+  
+  .pinterest-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Optional: Adjust spacing for mobile */
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+  
+  
+  .portfolio-item img {
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* Show overlay always on mobile */
+  .item-overlay {
+    position: relative;
+    transform: translateY(0);
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+  }
+
+}
+
+/* Ensure portfolio items are clickable */
+.portfolio-item * {
+  pointer-events: none;
+}
+
+.portfolio-item {
+  pointer-events: auto;
+}
+  
+  /* Footer Styles */
+  .footer {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 60px 5% 30px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  
+  .footer-col {
+    padding: 0 15px;
+  }
+  
+  .footer-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  
+  .footer-nav h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-nav h4::after,
+  .footer-contact h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #ff6b6b;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #ff6b6b;
+    padding-left: 5px;
+  }
+  
+  .contact-info p {
+    color: #ccc;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background: #ff6b6b;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Footer Navigation Right Shift - Desktop Only */
+  @media (min-width: 993px) {
+    .footer-nav {
+      transform: translateX(30px);
+      margin-left: 20px;
+    }
+    
+    .footer-nav h4::after {
+      left: 30px;
+    }
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 992px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-logo {
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .footer-nav {
+      transform: none;
+      margin-left: 0;
+    }
+    
+    .footer-nav h4::after,
+    .footer-contact h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .footer-logo {
+      grid-column: span 1;
+    }
+    
+    .footer-nav,
+    .footer-contact {
+      text-align: center;
+    }
+    
+    .footer-nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+    
+    .contact-info p {
+      justify-content: center;
+    }
+  }
+
+  

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MsStudio</title>
+  <link rel="icon" href="/images/M.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <!-- PhotoSwipe CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZNPWMWETW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZNPWMWETW');
+</script>
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Maintenance Notice -->
+  <!-- <div class="maintenance-notice">
+    <div class="notice-content">
+      ⚠️ Website Under Maintenance! Some content are not uploaded yet.⚠️<br>
+    </div>
+  </div>
+   -->
+  <header>
+    <div class="logo">
+      <a href="#hero"><img src="images/ms.webp" alt="MsStudio Logo" /> MsStudio</a>
+    </div>
+    <nav>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="menu-order-btn"><a href="#contact" class="btn">Hire Me</a></li>
+      </ul>
+      <div class="button-borders">
+        <button class="primary-button" onclick="location.href='#contact'"> HIRE ME
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="particles" id="particles-js"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1><span class="highlight typing-text">Muhammad Saad</span></h1>
+        <h2>Full Stack Web Developer | MERN Stack Expert</h2>
+        <p class="expertise">Expert Full Stack Developer specializing in the MERN stack with strong backend and frontend capabilities.</p>
+        <div class="hero-buttons">
+         <a href="#contact" class="cta-btn hire-me-button"><i class="fas fa-paper-plane"></i>Contact Me</a>
+          <a href="images/my_cv.pdf" class="button" download>
+            <span class="button__text">Download CV</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.webp" alt="Muhammad Saad" class="profile-img floating" fetchpriority="high">
+        <div class="tech-icons">
+          <img src="images/php.webp" alt="HTML" class="icon">
+          <img src="images/js.webp" alt="CSS" class="icon">
+          <img src="images/nodejs.webp" alt="JavaScript" class="icon">
+          <img src="images/react.webp" alt="React" class="icon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Slider Section -->
+  <div class="tech-slider-container">
+    <div class="tech-slider">
+      <!-- Icons will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm Muhammad Saad, a passionate Full Stack Developer with 3+ years of experience building web applications and stunning user interfaces. I specialize in creating seamless digital experiences that combine aesthetic appeal with technical excellence.</p>
+          
+          <div class="skills">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML, CSS, JavaScript, Typescript</li>
+                <li>React, Vue.js, Angular</li>
+                <li>Tailwind, Bootstrap</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js, Express</li>
+                <li>PHP, Laravel</li>
+                <li>Django</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Database</h3>
+              <ul>
+                <li>MongoDB</li>
+                <li>MySQL, PostgreSQL</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="about-quote">
+          <blockquote>
+            "Clean code is not written by following rules. It is crafted with care."
+            <cite>- Robert C. Martin</cite>
+          </blockquote>
+          <a href="#services" class="cta-btn hire-me-button" style="margin-top: 20px;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Experience Section -->
+  <section id="skills-experience" class="skills-experience">
+    <div class="container">
+      <h2 class="section-title">Skills & Experience</h2>
+      <div class="skills-grid">
+        <!-- Frontend Skills Column -->
+        <div class="skills-column">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>HTML & CSS</span><span>95%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript & TypeScript</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>React</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Vue.js & Angular</span><span>75%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+          </div>
+        </div>
+        <!-- Backend Skills Column -->
+        <div class="skills-column">
+          <h3>Backend</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>PHP & Laravel</span><span>95%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Node.js & Express</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>MySQL & PostgreSQL</span><span>95%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>MongoDB & Supabase</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+          </div>
+        </div>
+        <!-- Other Skills Column -->
+        <div class="skills-column">
+          <h3>Other Technologies</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Git & GitHub</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>REST APIs & GraphQL</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Docker</span><span>70%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CI/CD & Deployment</span><span>75%</span></div>
+            <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <p>Click Learn more to know more about the Services and Technologies</p>
+      <div class="services-grid">
+        <div class="service-card" data-service="Frontend Development">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, interactive UIs with React, Vue.js, HTML5, CSS3, and modern JavaScript frameworks</p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="service-card" data-service="Backend Development">
+          <i class="fas fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>Robust server-side solutions with Node.js, Express, Django, Laravel, and database management</p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="service-card" data-service="Full Stack Solutions">
+          <i class="fas fa-code-branch"></i>
+          <h3>Full Stack Solutions</h3>
+          <p>End-to-end web applications with MERN stack (MongoDB, Express, React, Node.js) and RESTful APIs</p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Modal -->
+<div id="service-modal" class="service-modal">
+  <div class="service-modal-content">
+    <span class="close-service-modal">&times;</span>
+    <h2 id="service-modal-title">Service Title</h2>
+    <div class="service-modal-description">
+      <!-- Description will be inserted here -->
+    </div>
+    <div class="service-technologies">
+      <h3>Technologies Used</h3>
+      <div class="tech-grid">
+        <!-- Technologies will be inserted here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-header">
+        <h2 class="section-title">My Portfolio</h2>
+        <p>Showcasing my best projects across different specialties</p>
+      </div>
+      
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Fullstack Projects --> 
+        <div class="portfolio-card" data-category="fullstack">
+          <div class="skeleton">
+            <img data-src="images/full-stack/visual.webp" alt="Pinterest-inspired Grid" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-complex">Complex</span>
+              <span class="service-type">Fullstack</span>
+            </div>
+            <h3>Visual Sharing Platform</h3>
+            <p>Pinterest-inspired visual content platform</p>
+            <div class="portfolio-tags">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+           <div class="portfolio-card" data-category="fullstack">
+          <div class="skeleton">
+            <img data-src="images/full-stack/fashionhub.webp" alt="Men Fashion Hub" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-complex">Complex</span>
+              <span class="service-type">Fullstack</span>
+            </div>
+            <h3>Men Fashion Hub</h3>
+            <p>Men's Fashion E-Commerce Store</p>
+            <div class="portfolio-tags">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card" data-category="fullstack">
+          <div class="skeleton">
+            <img data-src="images/full-stack/devbug.webp" alt="Bug Solving Platform" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-complex">Complex</span>
+              <span class="service-type">Fullstack</span>
+            </div>
+            <h3>Bug Solving Platform</h3>
+            <p>Collaborative bug solving platform</p>
+            <div class="portfolio-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Backend Projects -->
+        <div class="portfolio-card" data-category="backend">
+          <div class="skeleton">
+            <img data-src="images/back-end/reg-thumb.webp" alt="Registration System" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-moderate">Moderate</span>
+              <span class="service-type">Backend</span>
+            </div>
+            <h3>Registration System</h3>
+            <p>Login & Signup with PHP</p>
+            <div class="portfolio-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Security</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card" data-category="backend">
+          <div class="skeleton">
+            <img data-src="images/back-end/contact-thumb.webp" alt="Modern MERN Contact Form" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-moderate">Moderate</span>
+              <span class="service-type">Backend</span>
+            </div>
+            <h3>Modern MERN Contact Form</h3>
+            <p>Secure, responsive, and user-friendly</p>
+            <div class="portfolio-tags">
+              <span>MERN</span>
+              <span>Node.js</span>
+              <span>Express</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Frontend Projects -->
+          <div class="portfolio-card" data-category="frontend" style="display: none;">
+          <div class="skeleton">
+            <img data-src="images/front-end/boosteraffix-thumb.webp" alt="Performance Marketing Platform" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+              <span class="complexity-badge complexity-small">Simple</span>
+              <span class="service-type">Frontend</span>
+            </div>
+            <h3>Performance Marketing Platform</h3>
+            <p>Premium advertising solutions</p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card" data-category="frontend">
+          <div class="skeleton">
+            <img data-src="images/front-end/interactive-thumb.webp" alt="Interactive landing page" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+                <span class="complexity-badge complexity-small">Simple</span>
+                <span class="service-type">Frontend</span>
+            </div>
+            <h3>Interactive landing page</h3>
+            <p>Transform your digital presence</p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add this to your portfolio-grid section -->
+<div class="portfolio-card" data-category="fullstack">
+  <div class="skeleton">
+    <img data-src="images/full-stack/help2.webp" alt="Helping-Desk System" class="lazy-img" loading="lazy">
+  </div>
+  <div class="portfolio-overlay">
+    <div class="portfolio-badges">
+        <span class="complexity-badge complexity-complex">Complex</span>
+        <span class="service-type">Fullstack</span>
+    </div>
+    <h3>Helping-Desk System</h3>
+    <p>Ticket management solution</p>
+    <div class="portfolio-tags">
+      <span>PHP</span>
+      <span>JavaScript</span>
+      <span>MySQL</span>
+    </div>
+  </div>
+</div>
+        
+        <!-- Additional Projects (hidden by default) -->
+        <div class="portfolio-card" data-category="backend" style="display: none;">
+          <div class="skeleton">
+            <img data-src="images/back-end/step1.webp" alt="MERN Multi-Step Form" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+                <span class="complexity-badge complexity-moderate">Moderate</span>
+                <span class="service-type">Backend</span>
+            </div>
+            <h3>MERN Multi-Step Form</h3>
+            <p>Secure, User-Friendly Data Collection</p>
+            <div class="portfolio-tags">
+              <span>MERN</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+       <div class="portfolio-card" data-category="frontend">
+  <div class="skeleton">
+    <img data-src="images/front-end/funnelflow-thumb.webp" alt="FunnelFlow Sales Funnel Builder" class="lazy-img" loading="lazy">
+  </div>
+  <div class="portfolio-overlay">
+    <div class="portfolio-badges">
+        <span class="complexity-badge complexity-small">Simple</span>
+        <span class="service-type">Frontend</span>
+    </div>
+    <h3>FunnelFlow</h3>
+    <p>High-converting sales funnel builder</p>
+    <div class="portfolio-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>UI/UX</span>
+    </div>
+  </div>
+</div>
+
+        
+       <div class="portfolio-card" data-category="frontend">
+          <div class="skeleton">
+            <img data-src="images/front-end/quiz-app-thumb.webp" alt="Interactive Quizz App" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+                <span class="complexity-badge complexity-moderate">Moderate</span>
+                <span class="service-type">Frontend</span>
+            </div>
+            <h3>Interactive Quizz App</h3>
+            <p>Internal training platform</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-card" data-category="frontend" style="display: none;">
+          <div class="skeleton">
+            <img data-src="images/front-end/portfolio-thumb.webp" alt="Responsive Portfolio Website" class="lazy-img" loading="lazy">
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-badges">
+                <span class="complexity-badge complexity-small">Simple</span>
+                <span class="service-type">Frontend</span>
+            </div>
+            <h3>Responsive Portfolio Website</h3>
+            <p>Forge your firepower</p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="load-more">
+        <a href="#" class="btn btn-outline" id="load-more-btn">Load More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <div class="modal-description-container">
+        <h3 class="modal-description-heading">Project Details</h3>
+        <div class="modal-description">
+          <!-- Description will be inserted here -->
+        </div>
+        <div class="project-links">
+          <!-- Links will be inserted here -->
+        </div>
+      </div>
+      <div class="modal-grid">
+        <!-- Images will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Whether you need a stunning landing page, a full-stack application, or branding, I'm ready to help.</p>
+      <a href="#contact" class="btn btn-white">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-content">
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select Subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="quote">Quote Request</option>
+            <option value="order">Order Service</option>
+            <option value="collab">Collaboration</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+        </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Subscribe to my newsletter</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div id="form-message" class="form-message"></div>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> msaad23305@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Remote, Peshawar, Pakistan</li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/muhammad-saad-334875318/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/m-saad-1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <div class="logo">
+            <a href="#hero"><img src="images/ms.webp" alt="MsStudio Logo" /> MsStudio</a>
+          </div>
+          <p class="footer-description">
+            Crafting high-performance digital solutions with a focus on clean code and exceptional user experience. Let's build something amazing together.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/muhammad-saad-334875318/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/m-saad-1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to my newsletter for the latest on tech, projects, and articles.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div id="newsletter-message" class="form-message"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 MsStudio. All rights reserved.</div>
+  </footer>
+
+  <!-- New Theme Switcher -->
+  <div class="theme-switcher-container">
+    <label class="switch">
+      <input id="checkbox" type="checkbox" />
+      <span class="slider">
+        <div class="star star_1"></div>
+        <div class="star star_2"></div>
+        <div class="star star_3"></div>
+        <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+          <path
+            transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+            fill="#fff"
+            d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+          ></path>
+        </svg>
+      </span>
+    </label>
+  </div>
+
+  <!-- PhotoSwipe JS -->
+  <script type="module" src="https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
