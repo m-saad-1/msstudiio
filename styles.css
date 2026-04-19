@@ -1854,13 +1854,36 @@ a.contact-value:hover {
         margin-top: var(--spacing-md);
     }
 
+    .name-line {
+        font-size: clamp(3.8rem, 14vw, 4.8rem);
+    }
+
+    .about-row {
+        padding: var(--spacing-xl);
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
     .about-stats-row {
-        flex-direction: column;
-        gap: var(--spacing-2xl);
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--spacing-md);
+    }
+
+    .stat-item {
+        align-items: center;
+        text-align: center;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .skill-list li {
+        font-size: 0.85rem;
     }
 
     .portfolio-grid {
@@ -1888,8 +1911,27 @@ a.contact-value:hover {
     }
 
     .modal-carousel-section {
-        flex-wrap: wrap;
-        gap: var(--spacing-md);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: var(--spacing-md);
+        row-gap: var(--spacing-sm);
+    }
+
+    .modal-carousel {
+        grid-column: 1 / -1;
+    }
+
+    .carousel-prev {
+        grid-column: 1;
+        justify-self: start;
+        order: 0;
+    }
+
+    .carousel-next {
+        grid-column: 2;
+        justify-self: end;
+        order: 0;
     }
 
     .modal-actions-inline {
@@ -1922,7 +1964,7 @@ a.contact-value:hover {
     }
 
     .name-line {
-        font-size: 3rem;
+        font-size: 3.35rem;
     }
 
     .section-title {
@@ -1948,7 +1990,7 @@ a.contact-value:hover {
     }
 
     .hero-social {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: var(--spacing-sm);
     }
 
@@ -1969,15 +2011,7 @@ a.contact-value:hover {
     }
 
     .modal-carousel-section {
-        flex-direction: column;
-    }
-
-    .carousel-prev {
-        order: 0;
-    }
-
-    .carousel-next {
-        order: 2;
+        grid-template-columns: 1fr 1fr;
     }
 
     .modal-body {
