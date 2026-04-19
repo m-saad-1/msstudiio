@@ -861,8 +861,8 @@ input, textarea {
     background-color: var(--color-white);
     display: flex;
     gap: var(--spacing-2xl);
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .about-heading {
@@ -893,6 +893,8 @@ input, textarea {
     flex-direction: column;
     gap: var(--spacing-xs);
     flex: 1;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .stat-number {
@@ -901,6 +903,7 @@ input, textarea {
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--color-black);
+    line-height: 1;
 }
 
 .stat-label {
@@ -909,6 +912,11 @@ input, textarea {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--color-gray-400);
+    line-height: 1.35;
+}
+
+.stat-label--single {
+    white-space: nowrap;
 }
 
 /* =========================================
@@ -1855,7 +1863,7 @@ a.contact-value:hover {
     }
 
     .name-line {
-        font-size: clamp(3.8rem, 14vw, 4.8rem);
+        font-size: clamp(4.2rem, 16vw, 5.4rem);
     }
 
     .about-row {
@@ -1863,7 +1871,7 @@ a.contact-value:hover {
     }
 
     .about-text {
-        font-size: 0.9rem;
+        font-size: 0.82rem;
         line-height: 1.7;
     }
 
@@ -1874,8 +1882,25 @@ a.contact-value:hover {
     }
 
     .stat-item {
-        align-items: center;
-        text-align: center;
+        flex: 1 1 0;
+        min-width: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .stat-number {
+        font-size: 2.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.62rem;
+        letter-spacing: 1.5px;
+    }
+
+    .stat-number,
+    .stat-label {
+        width: 100%;
+        text-align: left;
     }
 
     .skills-grid {
@@ -1920,16 +1945,19 @@ a.contact-value:hover {
 
     .modal-carousel {
         grid-column: 1 / -1;
+        grid-row: 1;
     }
 
     .carousel-prev {
         grid-column: 1;
+        grid-row: 2;
         justify-self: start;
         order: 0;
     }
 
     .carousel-next {
         grid-column: 2;
+        grid-row: 2;
         justify-self: end;
         order: 0;
     }
@@ -1964,7 +1992,20 @@ a.contact-value:hover {
     }
 
     .name-line {
-        font-size: 3.35rem;
+        font-size: 3.75rem;
+    }
+
+    .about-text {
+        font-size: 0.78rem;
+    }
+
+    .stat-number {
+        font-size: 2.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.58rem;
+        letter-spacing: 1.25px;
     }
 
     .section-title {
@@ -1983,6 +2024,19 @@ a.contact-value:hover {
 
     .modal-header {
         margin-bottom: var(--spacing-lg);
+    }
+
+    .modal-carousel-section {
+        row-gap: var(--spacing-xs);
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        font-size: 0.95rem;
     }
 
     .hero-avatar {
